@@ -29,7 +29,7 @@ function transferFrom(address sender, address recipient, uint amount) external o
 allowance[sender][msg.sender] -= amount; //the msg.sender, the one that wants to transfer from another person's account is the one that will call this function
 balanceOf[sender] -= amount; //deducts the balance of the sender
 balanceOf[recipient] += amount; //increases the balance of the recipient
-emit Transfer(sender, recipient, amount); //emit transfer ie gossip or broadcast.
+emit Transfer(sender, recipient, amount); //emit transfer ie gossip orr  broadcast.
 return true; //return bool
 }
 
